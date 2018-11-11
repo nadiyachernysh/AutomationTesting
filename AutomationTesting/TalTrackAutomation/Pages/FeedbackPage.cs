@@ -57,7 +57,7 @@ namespace TalTrackAutomation.Pages
             //_browser.WaitForElementNotVisible(By.CssSelector(maskSelector));
             _browser.Pause(1);
             _addToGoal.Click();
-            _browser.WaitForTextToBePresentInElementLocated(By.Id("contained-modal-title-lg"), "Add Feedback to Goal");
+            _browser.WaitForTextToBePresentInElementLocated(By.Id("contained-modal-title-lg"), "Add Feedback to");
             _browser.Pause(1);
             var titleOfSelectedGoal = _browser.FindElements(By.CssSelector(".common-list-group.list-group.common-list-group-goals-popup .list-group-item strong"))[0].Text;
             var shortTitle = titleOfSelectedGoal.Substring(0, titleOfSelectedGoal.IndexOf(" "));

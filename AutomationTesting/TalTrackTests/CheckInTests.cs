@@ -26,6 +26,7 @@ namespace TalTrackTests
             checkInPage.AddStepsComment();
 
             var commentEntered = checkInPage.GetCommentAboutSteps();
+            checkInPage.RateProgressOnObjectives();
             checkInPage.PreviewCheckIn();
 
             var commentInPreview = checkInPage.GetCommentAboutSteps();

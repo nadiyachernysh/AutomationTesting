@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="CheckInTests.cs" />
     <Compile Include="GoalsTests.cs" />
+    <Compile Include="OKRsTests.cs" />
     <Compile Include="PraiseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Base\TestBase.cs" />

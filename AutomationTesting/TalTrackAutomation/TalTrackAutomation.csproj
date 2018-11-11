@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Logger.cs" />
+    <Compile Include="Pages\OKRsPage.cs" />
     <Compile Include="Pages\ActivityFeedPage.cs" />
     <Compile Include="Pages\CheckInPage.cs" />
     <Compile Include="Pages\FeedbackPage.cs" />

@@ -128,5 +128,14 @@ namespace TalTrackAutomation.Pages
         {
             return _browser.FindElement(By.ClassName("section-header-check-in-submitted")).Text;
         }
+
+        public void RateProgressOnObjectives()
+        {
+            var objectivesInCheckIn = _browser.FindElements(By.CssSelector(".rate-buttons-block li.above a"));
+            foreach (var objective in objectivesInCheckIn)
+            {
+                objective.Click();
+            }
+        }
     }    
 }

@@ -61,14 +61,14 @@ namespace TalTrackAutomation
 
         public string GetLastPublicPraise()
         {
-            _browser.WaitForElementVisible(By.CssSelector(".recent-item:nth-child(1) .from-user p:first-child"));
-            return _browser.FindElement(By.CssSelector(".recent-item:nth-child(1) .from-user p:first-child")).Text;
+            _browser.WaitForElementVisible(By.CssSelector(".recent-item:nth-child(1) .sent-info .sent-content"));
+            return _browser.FindElement(By.CssSelector(".recent-item:nth-child(1) .sent-info .sent-content")).Text;
         }
 
         public string GetBodyOfLastPublicPraise()
         {
-            _browser.WaitForElementVisible(By.CssSelector(".recent-item .from-user p:last-child"));
-            var bodyOfLastPraise = _browser.FindElements(By.CssSelector(".recent-item .from-user p:last-child"))[0].Text;
+            _browser.WaitForElementVisible(By.CssSelector(".recent-item:nth-child(1) .praise-body"));
+            var bodyOfLastPraise = _browser.FindElements(By.CssSelector(".recent-item:nth-child(1) .praise-body"))[0].Text;
             var checkWord = bodyOfLastPraise.Substring(0, bodyOfLastPraise.IndexOf(" "));
             return checkWord;
         }

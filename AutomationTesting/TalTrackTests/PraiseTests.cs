@@ -1,10 +1,9 @@
-﻿//using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NUnit.Framework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 using TalTrackAutomation;
 using TalTrackAutomation.Pages;
 
@@ -31,7 +30,7 @@ namespace TalTrackTests
 
             var nameOfSender = homePage.GetNameOfSender();
             var lastPublicPraise = homePage.GetLastPublicPraise();
-            Assert.AreEqual(nameOfSender + " sent praise to " + nameOfReceiver, lastPublicPraise);                        
+            Assert.AreEqual($"{nameOfSender} sent praise to {nameOfReceiver}", lastPublicPraise);                        
         }
 
         //[Test, Order(2)]
@@ -89,7 +88,7 @@ namespace TalTrackTests
 
             var nameOfSender = homePage.GetNameOfSender();
             var lastPublicPraise = homePage.GetLastPublicPraise();
-            Assert.AreEqual(nameOfSender + " sent praise to " + nameOfReceiver, lastPublicPraise);
+            Assert.AreEqual($"{nameOfSender} sent praise to {nameOfReceiver}", lastPublicPraise);
         }
 
         [Test, Order(6)]

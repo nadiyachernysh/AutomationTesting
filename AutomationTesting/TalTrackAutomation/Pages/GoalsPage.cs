@@ -54,7 +54,7 @@ namespace TalTrackAutomation
         {
             _browser.Goto("goals");
             //_browser.WaitForElementVisible(By.ClassName("unrated"));
-            _browser.WaitForCustom(ExpectedConditions.ElementIsVisible(By.ClassName("unrated")));
+            _browser.WaitForCustom(ExpectedConditions.ElementIsVisible(By.ClassName("actions")));
 
         }
 
